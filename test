@@ -1,0 +1,13 @@
+var nAme = ''
+let userName = nAme || 'PEPEGA'
+userName ? console.log(`Hi ${userName}`) : console.log(`What is your name? 4Head`)
+
+var ranNum1 = Math.floor(Math.random() * 6 + 1)
+var ranNum2 = Math.floor(Math.random() * 6 + 1)
+dTotal = (ranNum1 + ranNum2)
+
+if (ranNum1 === ranNum2) {console.log(`You rolled a "${dTotal}" (${ranNum1}, ${ranNum2}) DOUBLES GO TO JAIL ${userName}!`)}
+else if (dTotal < 5) {console.log(`${userName}, you low rolled a "${dTotal}" (${ranNum1}, ${ranNum2}) sucks to suck`)}
+else if (dTotal > 4 && dTotal < 9) {console.log(`${userName}, you rolled a "${dTotal}" (${ranNum1}, ${ranNum2}) AVERAGE!`)}
+else if (dTotal > 8 && dTotal < 12) {console.log(`${userName}, you rolled a "${dTotal}" (${ranNum1}, ${ranNum2}) NICE!`)}
+else if (dTotal === 12) {console.log(`${userName}, you rolled a "${dTotal}" (${ranNum1}, ${ranNum2}) pogU pogU`)}
